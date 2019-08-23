@@ -2,11 +2,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #f2f2f2;
+  background: url('https://www.techjay.com/wp-content/uploads/2017/10/412859.jpg');
+  background-attachment: local, scroll;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+a {
+  color:green;
+  text-decoration: none;
 }
 
 .movie-card {
-  background-color: #fff;
+  background:url('https://i.redd.it/sfiddyu0m4y01.jpg');
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -22,7 +30,7 @@ body {
 }
 
 .saved-list {
-  background-color: #fff;
+  background-color: rgb(245, 174, 174);
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -43,16 +51,19 @@ body {
 .saved-movie {
   margin: 0 10px;
 }
+
 .saved-active {
   color: blue;
   border: 1px solid grey;
   padding: 5px;
 }
+
 .save-wrapper {
   position: relative;
   width: 75%;
   margin: 1rem auto;
 }
+
 .save-button {
   position: absolute;
   top: 25px;
@@ -61,17 +72,51 @@ body {
   padding: 5px 10px;
   background-color: lightseagreen;
 }
+
 .save-button:hover {
   background-color: green;
-  color: white;
+  color: rgb(116, 82, 82);
 }
 
 .home-button {
+  margin: 0 0.25rem;
   padding: 5px 10px;
-  background-color: lightskyblue;
+  background-color: rgb(23, 45, 58);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.form {
+  margin: auto;
+  width: 100%;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  padding: 0.5rem;
+  border: purple;
+  margin: 0.25rem;
+}
+
+button {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  background-color: lightskyblue;
+  border: 1px solid #ccc;
 }
